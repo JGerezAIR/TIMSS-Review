@@ -1,3 +1,4 @@
+* Encoding: UTF-8.
 *------------------------------------------------------------------------------*
  |                                                                             |
  |                       TIMSS 2015 Advanced Mathematics                       |
@@ -28,7 +29,7 @@
 
 FILE HANDLE DATA / NAME="[FILE SPECIFICATION]" LRECL=741.
 DATA LIST FILE=DATA /
-   IDCNTRY 1-10 (A) IDBOOK 11 IDSCHOOL 12-14 IDCLASS 15-19 IDSTUD 20-26
+   IDCNTRY 1-10 IDBOOK 11 IDSCHOOL 12-14 IDCLASS 15-19 IDSTUD 20-26
    IDGRADE 27-28 ITBIRTHM 29-30 ITBIRTHY 31-34 ITSEX 35 ITADMINI 36 ITLANG 37
    MSBG01 38 MSBG02A 39-40 MSBG02B 41-42 MSBG03 43 MSBG04 44 MSBG05 45 MSBG06A
    46 MSBG06B 47 MSBG06C 48 MSBG06D 49 MSBG06E 50 MSBG06F 51 MSBG06G 52
@@ -738,6 +739,8 @@ VALUE LABELS
      5 "Booklet 05"
      6 "Booklet 06"
      99 "Omitted or invalid"
+   /IDCNTRY
+     840 "COUNTRY ID"
    /IDGRADE
      12 "Grade 12"
    /IDGRADER
